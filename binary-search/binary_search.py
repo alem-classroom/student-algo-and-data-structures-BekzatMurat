@@ -5,7 +5,7 @@ def binary_search(lst, to_find):
     low = 0
     high = len(lst) - 1
     while low <= high:
-        mid = (low+high) // 2
+        mid = low + (high-low) // 2
         if lst[mid] == to_find:
             return mid
         elif to_find > lst[mid]:
